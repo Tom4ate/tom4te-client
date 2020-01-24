@@ -2,6 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
+    podModulePrefix: 'tom4te/pods',
     modulePrefix: 'tom4te',
     environment,
     rootURL: '/',
