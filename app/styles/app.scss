@@ -1,0 +1,92 @@
+
+@import "ember-bootstrap/bootstrap";
+
+.width-full {
+  width: 100%;
+}
+
+
+.height-full {
+  height: 100%;
+}
+
+.width-full-vh {
+  width: 100vh;
+}
+
+
+.height-full-vh {
+  height: 100vh;
+}
+
+
+.width-auto {
+  width: auto;
+}
+
+
+.height-auto {
+  height: auto;
+}
+
+.margin-10-px {
+  margin: 10px;
+}
+
+
+.margin-20-px {
+  margin: 20px;
+}
+
+
+.margin-left-10-px {
+  margin: 10px;
+}
+
+
+.margin-left-20-px {
+  margin: 20px;
+}
+
+
+.margin-bottom-10-px {
+  margin: 10px;
+}
+
+
+.margin-bottom-20-px {
+  margin: 20px;
+}
+
+.display-block {
+  display: block ;
+}
+
+.center {
+  left: auto;
+  right: auto;
+}
+
+.left-panel {
+    display: table-cell;
+    height: 100vh;
+    min-height: 100%;
+    padding: 0 10px;
+    vertical-align: top;
+    width: 280px;
+    transition: width .3s ease;
+}
+
+.navbar {
+  display: block;
+  margin: 0;
+  margin-bottom: 100px;
+  padding: 10px;
+
+}
+
+  .nav-header {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }

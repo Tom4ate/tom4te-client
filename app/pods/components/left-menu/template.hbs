@@ -1,0 +1,45 @@
+
+<aside id="left-panel" class="left-panel">
+  <WiredCard class="navbar width-full height-full ">
+    <div class="nav-header">
+      <div class="usuario-informacao">
+        <h6>{{ autenticado.usuario.nome }}</h6>
+        <WiredImage @src={{ autenticado.usuario.avatar }} class="user-image"></WiredImage>
+      </div>
+
+      <div class="botoes-acao-menu">
+        {{#each autenticado.menu.header.acoes as |acao|}}
+          <WiredIconButton>{{acao.icone}}</WiredIconButton>
+        {{/each}}
+        {{!-- <WiredFab @class="red">
+          <button type="button">
+            ❌
+          </button>
+        </WiredFab> --}}
+      </div>
+    </div>
+
+    <WiredDivider></WiredDivider>
+
+    <div class="main-menu">
+      <div class="menu-lista">
+        <div class="menu-item">
+          {{#each autenticado.menu.itens as |item|}}
+            <WiredIconButton>{{item.icone}}</WiredIconButton> {{item.nome}}
+            {{!-- {{#if (and item.filhos item.filhos.ativo )}}
+              {{#each as |filho|}}
+                <link:to @route={{filho.rota}}>{{filho.nome}}</link:to>
+              {{/each}}
+            {{/if}} --}}
+            <WiredDivider></WiredDivider>
+
+          {{/each}}
+
+        </div>
+      </div>
+
+    </div>
+  </WiredCard>
+</aside>
+
+{{yield}}

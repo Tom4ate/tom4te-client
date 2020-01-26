@@ -8,7 +8,11 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
 
-  this.route('autenticado');
+  this.route('autenticado',{ path : '/tom4te' }, function() {
+    this.route('admin', function() {
+      this.route('dashboard',{ path : '/' });
+    });
+  });
 
   this.route('desautenticado');
 
