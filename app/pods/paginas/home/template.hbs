@@ -1,11 +1,64 @@
 <div class="width-auto height-full-vh margin-rigth-20-px margin-bottom-20-px">
 
-  <WiredCard class="wired width-full height-auto display-block">
-    <div class="">
-      <LinkTo @route="autenticado.admin">Admin</LinkTo>
-      {{!-- <Frog/> --}}
+  <div class="flex">
+    <div class="col-4">
+      <WiredCard class="wired width-full height-auto display-block">
+
+        <div class="item">
+          <div class="icon">
+            <LinkTo @route="autenticado.admin">Admin</LinkTo>
+          </div>
+        </div>
+
+      </WiredCard>
+
+        <WiredCard class="wired width-full height-auto display-block">
+
+        <div class="item">
+          <div class="icon">
+            <LinkTo @route="autenticado.dashboard">dashboard</LinkTo>
+          </div>
+        </div>
+
+      </WiredCard>
+
+      <WiredCard class="wired width-full height-auto display-block">
+
+        <div class="item">
+          <div class="icon">
+            <LinkTo @route="autenticado.feed">feed</LinkTo>
+          </div>
+        </div>
+
+      </WiredCard>
+
+      <WiredCard class="wired width-full height-auto display-block">
+
+        <div class="item">
+          <div class="icon">
+            <LinkTo @route="autenticado.post">post</LinkTo>
+          </div>
+        </div>
+
+      </WiredCard>
+
+      <WiredCard class="wired width-full height-auto display-block">
+
+        <div class="item">
+          <div class="icon">
+            <LinkTo @route="autenticado.perfil">perfil</LinkTo>
+          </div>
+        </div>
+
+      </WiredCard>
     </div>
-  </WiredCard>
+
+    <div class="col-6">
+      <div class="width-full">
+        <Frog/>
+      </div>
+    </div>
+  </div>
 
 </div>
 

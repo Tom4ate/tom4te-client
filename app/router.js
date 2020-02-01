@@ -12,22 +12,22 @@ Router.map(function() {
     this.route('admin', function() {
       this.route('dashboard',{ path : '/' });
     });
-    this.route('dashboard', function() {
+    this.route('dashboard',{ path : '/' }, function() {
       this.route('custom');
     });
-    this.route('feed', function() {
+    this.route('feed',{ path : '/feed' }, function() {
       this.route('configuracao');
-      this.route('lista');
+      this.route('lista',{ path : '/' });
     });
     this.route('post', function() {
       this.route('novo');
       this.route('editar');
-      this.route('visualizar');
+      this.route('visualizar',{ path : '/' });
     });
     this.route('perfil', function() {
       this.route('usuario');
       this.route('editar');
-      this.route('visualizar');
+      this.route('visualizar',{ path : '/' });
     });
   });
 

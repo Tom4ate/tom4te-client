@@ -1,0 +1,35 @@
+{{yield}}
+
+
+<WiredDialog open={{chatAtivo}}  >
+
+
+  <p class="grid">
+
+    <div class='chat-header '>
+      <div style="text-align: right; padding: 30px 16px 16px;">
+
+        <wired-button {{action "fecharChat"}} >fechar</wired-button>
+
+      </div>
+    </div>
+
+    <WiredCard class="margin-20-px"  >
+      {{#each mensagens as |mensagem|}}
+
+
+        {{else}}
+          sem mensagens
+      {{/each}}
+
+    </WiredCard>
+
+    <div class="">
+
+      <Input class="send mansage" @value={{mensagemText}} onkeypress={{action "inputKeypress"}} />
+
+    </div>
+
+  </p>
+
+</WiredDialog>
